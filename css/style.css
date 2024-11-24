@@ -1,0 +1,105 @@
+/* Geral */
+
+html {
+    font-family: 'Readex Pro', sans-serif;
+    margin: 20px 50px;
+    background-color: black;
+    user-select: none;
+    overflow-x: hidden;
+    
+}
+
+html p {
+    color: white;
+}
+
+/* Cabeçalho */
+
+.header-block {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-block ul {
+    display: ruby;
+}
+
+.header-block ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0087ca;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+}
+
+/* Section Who */
+
+.who {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 250px;
+}
+.who h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.who h2 span, .who p span {
+    color: #0087ca;
+    font-weight: 700;
+}
+
+.who p {
+    font-weight: 100;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+/* Animation Scroll Left */
+
+.marquee {
+    font-size: 200px;
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee p {
+    margin: 0;
+    width: 100%;
+    color: #0087ca;
+    animation: marqueeAnimation 15s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
