@@ -5,4 +5,4 @@ Criado também para me apresentar brevemente junto ao meu CV.
 
 ![image](https://github.com/user-attachments/assets/4f7b6baf-bc05-4768-a79f-c5b557ecd6e3)
 
-ACESSE AQUI:
+ACESSE AQUI: https://pricilaoliveirarocha.github.io/simple-portfolio/
